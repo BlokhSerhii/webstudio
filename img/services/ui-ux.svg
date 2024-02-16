@@ -1,0 +1,11 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="98" height="83" stroke="#EDD500" stroke-width="2"/>
+<line x1="40" y1="91" x2="60" y2="91" stroke="#EDD500" stroke-width="2"/>
+<line x1="10" y1="99" x2="90" y2="99" stroke="#EDD500" stroke-width="2"/>
+<rect x="0.473043" y="1.30115" width="9.80431" height="33.7547" transform="matrix(0.914762 0.403993 -0.441719 0.897154 50.6433 19.0474)" stroke="#EDD500" stroke-width="2"/>
+<rect x="0.473043" y="1.30115" width="9.80431" height="3.41844" transform="matrix(0.914762 0.403993 -0.441719 0.897153 53.4827 13.5904)" stroke="#EDD500" stroke-width="2"/>
+<path d="M34.1788 62.533L35.0373 53.3175L42.4781 56.5701L34.1788 62.533Z" stroke="#EDD500" stroke-width="2"/>
+<path d="M37 59.6667L35 61C35 61 35 58.8682 35 58.5L35.7989 59.6667H37Z" fill="#EDD500"/>
+<path d="M33.5 65.4999C91.5757 60.9201 16.9996 59.7072 74.9996 58.8572" stroke="#EDD500" stroke-width="2" stroke-linecap="round"/>
+<line y1="-1" x2="26.1708" y2="-1" transform="matrix(-0.441719 0.897154 -0.914762 -0.403993 52.5602 25)" stroke="#EDD500" stroke-width="2"/>
+</svg>

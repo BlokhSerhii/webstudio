@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="favicon" rel="icon" href="img/favicon.png" type="image/png">
+    <title>WeBStudio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="rectangle"></div>
+        <div class="back-lines">
+            <div class="inner">
+                <div class="back-lines__line"></div>
+                <div class="back-lines__line"></div>
+                <div class="back-lines__line"></div>
+                <div class="back-lines__line"></div>
+                <div class="back-lines__line"></div>
+            </div>
+        </div>
+        <div class="back-squares">
+            <i class="square"></i>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>	
+        </div>
+        <nav class="navbar">
+            <div class="inner">
+                <div class="navbar__logo">
+                    <div class="navbar__logo_icon">
+                        <img src="./img/logo-icon.svg" alt="Logo">
+                    </div>
+                    <div class="navbar__logo_caption">
+                        <p class="navbar__logo_title"><span>W</span><span>eB</span>Studio</p>
+                        <p class="navbar__logo_text">IT Розробка</p>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar__container">
+                        <ul class="menubar__list">
+                            <li class="menubar__item"><a class="menubar__link menubar-active" href="#home">Головна</a></li>
+                            <li class="menubar__item"><a class="menubar__link" href="#about">Про себе</a></li>
+                            <li class="menubar__item"><a class="menubar__link" href="#services">Послуги</a></li>
+                            <li class="menubar__item"><a class="menubar__link" href="#projects">Проєкти</a></li>
+                            <li class="menubar__item"><a class="menubar__link" href="#pricing">Прайс</a></li>
+                            <li class="menubar__item"><a class="menubar__link" href="#contacts">Контакти</a></li>
+                            <li class="menubar__lang">
+                                <div class="select-lang toggle-lang">
+                                    <div class="select-lang__option">
+                                        Ua
+                                        <div class="select-lang__thumb">
+                                            <img src="./img/arrow-down.svg" alt="thumb">
+                                        </div>
+                                    </div>
+                                    <div class="select-lang__list">
+                                      <div class="select-lang__item"><a class="select-lang__link" href="./index.html">En</a></div>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li class="menubar__burger">
+                                <div class="burger toggle-burger">
+                                    <span class="top"></span>
+                                    <span class="middle"></span>
+                                    <span class="bottom"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+        
+        <div class="overlay">
+            <div class="overlay__container">
+                <div class="overlay__item">
+                    <ul class="overlay-menu">
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#home">Головна</a></li>
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#about">Про себе</a></li>
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#services">Послуги</a></li>
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#projects">Проєкти</a></li>
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#pricing">Прайс</a></li>
+                        <li class="overlay-menu__item"><a class="overlay-menu__link" href="#contacts">Контакти</a></li> 
+                    </ul>
+                </div> 
+                <div class="overlay__item">
+                    <ul class="overlay-socials">
+                        <li class="overlay-socials__item">
+                            <a href="https://www.linkedin.com/in/serhii-blokh-9b2a452a5">
+                                <div class="overlay-socials__icon">
+                                    <img src="./img/socials/linkedin.svg" alt="linkedin">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="overlay-socials__item">
+                            <a href="https://t.me/@SerhiiBlokh">
+                                <div class="overlay-socials__icon">
+                                    <img src="./img/socials/telegram.svg" alt="telegram">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="overlay-socials__item">
+                            <a href="https://api.whatsapp.com/send?phone=380930306522">
+                                <div class="overlay-socials__icon">
+                                    <img src="./img/socials/whatsApp.svg" alt="whatsApp">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="overlay-socials__item">
+                            <a href="mailto:0967831428blokh@gmail.com">
+                                <div class="overlay-socials__icon">
+                                    <img src="./img/socials/google.svg" alt="google">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+        <header id="home" class="header page">
+            <div class="header__container">
+                <div class="inner">
+                    <div class="header__item">
+                        <div class="header-title">
+                            <h2 class="header-title__subtitle">Привіт, я Сергій Бльох</h2>
+                            <h1 class="header-title__headline">Веб розробник
+                                <span class="headLine">Фрілансер</span>
+                                <span class="headLine">Веб розробник</span> 
+                            </h1>
+                            <p class="header-title__location">Проживаю в Україні <span>Луцьк</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-socials">
+                <p class="header-socials__text">Знайти мене</p>
+                <div class="header-socials__line"></div>
+                <ul class="header-socials__list">
+                    <li class="header-socials__item">
+                        <a href="https://www.linkedin.com/in/serhii-blokh-9b2a452a5">
+                            <div class="header-socials__icon">
+                                <img src="./img/socials/linkedin.svg" alt="linkedin">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-socials__item">
+                        <a href="https://github.com/BlokhSerhii">
+                            <div class="header-socials__icon">
+                                <img src="./img/socials/gitHub.svg" alt="gitHub">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-socials__item">
+                        <a href="https://webstudio-talk.slack.com/team/U067WH9LB0E">
+                            <div class="header-socials__icon">
+                                <img src="./img/socials/slack.svg" alt="slack">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-socials__item">
+                        <a href="https://www.facebook.com/SerhiiBlokh">
+                            <div class="header-socials__icon">
+                                <img src="./img/socials/facebook.svg" alt="facebook">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-socials__item">
+                        <a href="https://www.instagram.com/serhiiblokh">
+                            <div class="header-socials__icon">
+                                <img src="./img/socials/instagram.svg" alt="instagram">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main> 
+            <section id="about" class="about page">
+                <div class="inner">
+                    <div class="about-caption">
+                        <h2 class="about-caption__title">Про себе</h2>
+                        <h3 class="about-caption__subtitle">Моя історія коротко</h3>
+                    </div>
+                    <div class="about__container">
+                        <div class="about__item">
+                            <div class="about__frame">
+                                <img class="about__foto" src="./img/about/foto.svg" alt="Foto">
+                                <div class="about-socials">
+                                    <ul class="about-socials__list">
+                                        <li class="about-socials__item">
+                                            <a href="https://www.facebook.com/SerhiiBlokh">
+                                                <div class="about-socials__icon">
+                                                    <img src="./img/socials/facebook.svg" alt="facebook">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="about-socials__item">
+                                            <a href="https://www.instagram.com/serhiiblokh">
+                                                <div class="about-socials__icon">
+                                                    <img src="./img/socials/instagram.svg" alt="instagram">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__content">
+                                <p class="about__content_title">Декілька слів про себе</p>
+                                <p class="about__content_text">Я, front-end розробник фрілансер. Мене легко запалює робота, результат якої є відчутним і видимим. Найбільше мотивує можливість знаходити способи зробити вебсайти кращими для користувачів, втілювати ідеї в реальність.</p>
+                                <p class="about__content_text">Зацікавлений у постійному вдосконаленні своїх навичок та застосуванні нових технологій для досягнення найкращих результатів у своїй роботі.</p>
+                                <p class="about__content_text">Готовий приєднатися до команди, щоб разом творити вражаючі веб-проекти!</p>
+                            </div>
+                            <div class="about__btn">
+                                <a class="about__link" href="./img/resume_ua.pdf" target="_blank">Дивитись CV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__container">
+                        <div class="skills__item">
+                            <p class="skills__title">Чим я займаюсь</p>
+                            <ul class="skills-list">
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Кросбраузерна, валідна, семантична, адаптивна верстка</p>
+                                </li>
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Робота з методологію БЭМ, робота з препроцесорами SАSS/LESS</p>
+                                </li>
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Досвід роботи з фреймворками Bootstrap, Materialize</p>
+                                </li>
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Досвід роботи з GitHub, IDE - WebStorm, VS Code</p>
+                                </li>
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Знаю основи Node JS, PHP і SQL</p>
+                                </li>
+                                <li class="skills-list__item">
+                                    <p class="skills-list__text">Англійська мова на рівні Pre-Intermediate(B2)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__frame">
+                                <img class="skills__img" src="./img/skills/icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__container">
+                        <div class="skills__item">
+                            <p class="skills__title">Навички програмування</p>
+                            <div class="skills-cards">
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">HTML5</p>
+                                        <p class="skill-card__desc">90%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress html"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">CSS3</p>
+                                        <p class="skill-card__desc">90%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress css"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">Java Script</p>
+                                        <p class="skill-card__desc">80%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress js"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">Figma</p>
+                                        <p class="skill-card__desc">90%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress figma"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">Angular</p>
+                                        <p class="skill-card__desc">50%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress angular"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-card__title">
+                                        <p class="skill-card__text">ReactJS</p>
+                                        <p class="skill-card__desc">70%</p>
+                                    </div>
+                                    <div class="skill-card__item">
+                                        <div class="skill-card__progress react"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <p class="skills__title">Освіта</p>
+                            <div class="skills-cards">
+                                <div class="education">
+                                    <div class="education__date">
+                                        <p class="education__date_year">2002</p>
+                                        <p class="education__date_year">2005</p>
+                                    </div>
+                                    <div class="education__line"></div>
+                                    <div class="education__content">
+                                        <p class="education__content_text">ВПУ №6</p>
+                                        <p class="education__content_desc">Оператор комп’ютерного набору та верстка</p>
+                                    </div>
+                                </div>
+                                <div class="education">
+                                    <div class="education__date">
+                                        <p class="education__date_year">2005</p>
+                                        <p class="education__date_year">2010</p>
+                                    </div>
+                                    <div class="education__line"></div>
+                                    <div class="education__content">
+                                        <p class="education__content_text">ЛНТУ</p>
+                                        <p class="education__content_desc">Економіка підприємства</p>
+                                    </div>
+                                </div>
+                                <div class="education">
+                                    <div class="education__date">
+                                        <p class="education__date_year">2022</p>
+                                        <p class="education__date_year">2023</p>
+                                    </div>
+                                    <div class="education__line"></div>
+                                    <div class="education__content">
+                                        <p class="education__content_text">IT Step School</p>
+                                        <p class="education__content_desc">Frontend розробник</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </section>
+
+            <section id="services" class="services page">
+                <div class="inner">
+                    <div class="services-caption">
+                        <h2 class="services-caption__title">Послуги</h2>
+                        <h3 class="services-caption__subtitle">Люблю легкі та цікаві речі</h3>
+                    </div>
+                    
+                </div>
+                <div class="services__container">
+                    <div class="services__item">
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <div class="service-card__caption">
+                                    <div class="service-card__thumb" style="background: rgba(0, 232, 240, 1);"></div>
+                                    <h3 class="service-card__title">Розробка веб-сторінок</h3>
+                                </div>
+                                <ul class="service-card__list">
+                                    <li class="service-card__item">Створення структури і стилів для веб-сторінок</li>
+                                    <li class="service-card__item">Адаптивна верстка для коректного відображення на різних пристроях</li>
+                                    <li class="service-card__item">Реалізація інтерактивних елементів та обробка подій</li>
+                                    <li class="service-card__item">Оптимізація продуктивності</li>
+                                </ul>
+                                <div class="service-card__lines" style="border-color: rgba(0, 232, 240, 1);"></div>
+                            </div>
+                        </div>
+                        <div class="service-thumb">
+                            <div class="service-thumb__content">
+                                <img src="./img/services/service1.svg" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <div class="service-card__caption">
+                                    <div class="service-card__thumb" style="background: rgba(237, 213, 0, 1);"></div>
+                                    <h3 class="service-card__title">Дизайн інтерфейсів (UI/UX)</h3>
+                                </div>
+                                <ul class="service-card__list">
+                                    <li class="service-card__item">Cтворення інтерфейсу, який легко сприймається та розуміється</li>
+                                    <li class="service-card__item">Створення компонентів сайту, які дозволяють користувачеві легко використовувати функціонал додатка чи веб-сайту</li>
+                                    <li class="service-card__item">Дослідження потреб користувача та тестування інтерфейсів</li>
+                                </ul>
+                                <div class="service-card__lines" style="border-color: rgba(237, 213, 0, 1);">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-thumb">
+                            <div class="service-thumb__content">
+                                <img src="./img/services/service2.svg" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-card__content">
+                                <div class="service-card__caption">
+                                    <div class="service-card__thumb" style="background: rgba(113, 206, 0, 1);"></div>
+                                    <h3 class="service-card__title">Супровід</h3>
+                                </div>
+                                <ul class="service-card__list">
+                                    <li class="service-card__item">Підтримка 24/7</li>
+                                    <li class="service-card__item">Cтворення докладної документації для супроводження та розвитку</li>
+                                </ul>
+                                <div class="service-card__lines" style="border-color: rgba(113, 206, 0, 1);">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-thumb">
+                            <div class="service-thumb__content">
+                                <img src="./img/services/service3.svg" alt="thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="projects" class="projects page">
+                <div class="inner">
+                    <div class="projects-caption">
+                        <h2 class="projects-caption__title">Проєкти</h2>
+                        <h3 class="projects-caption__subtitle">Завершені роботи</h3>
+                    </div>
+                    <div class="projects__container">
+                        <div class="projects__item">
+                            <div class="projects-content">
+                                <p class="projects-content__text">На даний момент у портфоліо результати моєї роботи під час курсів з HTML/CSS, JavaScript, а також самостійно створені макети, які я отримував від замовників.</p>
+                                <p class="projects-content__text">Посилання на сторінку GitHub показує  результати моєї роботи.</p>
+                                <div class="projects-content__btn">
+                                    <a class="projects-content__link" href="https://github.com/BlokhSerhii">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="projects-slider">
+                                <div class="projects-slider__container">
+                                    <div class="projects-slider__controls projects-controls">
+                                        <div class="projects-slider__controls_btn projects-left">
+                                            <img class="projects-slider__arrow" src="./img/arrow-left.svg" alt="arrow-left">
+                                        </div>
+                                        <div class="projects-slider__controls_btn projects-right">
+                                            <img class="projects-slider__arrow" src="./img/arrow-right.svg" alt="arrow-right">
+                                        </div>
+                                    </div>
+                                    <div class="projects-slider__loop">
+                                        <img src="./img/projects/loop.svg" alt="loop">
+                                    </div>
+                                    <img src="" alt="Slide" class="active-project__thumb">
+                                </div>
+                                <div class="projects-slider__indicators"></div>
+                                <ul class="projects-data">
+                                    <li class="project">
+                                        <img src="./img/projects/project-1.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="project">
+                                        <img src="./img/projects/project-2.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="project">
+                                        <img src="./img/projects/project-3.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="project">
+                                        <img src="./img/projects/project-4.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="projects-data__item">
+                                        <img src="./img/projects/project-5.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="projects-data__item">
+                                        <img src="./img/projects/project-6.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="projects-data__item">
+                                        <img src="./img/projects/project-7.svg" alt="" class="project__icon">
+                                    </li>
+                                    <li class="projects-data__item">
+                                        <img src="./img/projects/project-8.svg" alt="" class="project__icon">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="projects__subtitle">Я завжди радий позитивним відгукам від моїх чудових клієнтів. Ось кілька останніх відгуків.</p>
+                    </div>
+                </div>
+                <div class="projects__container">
+                    <div class="projects__item">
+                        <div class="reviews-slider">
+                            <div class="reviews-slider__container">
+                                <div class="reviews-slider__header">
+                                    <div class="reviews-slider__header_avatar">
+                                        <img src="./img/reviews/james.svg" alt="foto">
+                                    </div>
+                                    <div class="reviews-slider__caption">
+                                        <p class="reviews-slider__caption_name"></p>
+                                        <p class="reviews-slider__caption_profession"></p>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__content">
+                                    <p class="reviews-slider__content_text"></p>
+                                </div>
+                            </div>
+                            <div class="reviews-slider__indicators"></div>
+                        </div>
+                        <ul class="reviews-data">
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/iruna.svg" alt="foto">
+                                <p class="review-name">Ірина Богдан</p>
+                                <p class="review-profession">Дизайнер</p>
+                                <p class="review-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus amet, natus tempora cupiditate veniam iusto distinctio. Tempora, ut illo. Saepe a quae veritatis ratione, ab doloremque voluptatum, sunt adipisci, similique fugiat aliquid expedita. Maxime, cumque? Nostrum rem sunt ad illum iste nesciunt aut est modi, nam mollitia odio vitae culpa.</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/talan.svg" alt="foto">
+                                <p class="review-name">Талан Ботош</p>
+                                <p class="review-profession">Дизайнер</p>
+                                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquid dolorum necessitatibus tempora neque exercitationem quas similique, quia ipsa iure fuga consequuntur distinctio quo dicta aperiam doloremque. Libero a vero neque quis quo error veniam vel? Possimus ad velit amet?</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/allison.svg" alt="foto">
+                                <p class="review-name">Еллісон Хевідж</p>
+                                <p class="review-profession">Дизайнер</p>
+                                <p class="review-text right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a perspiciatis ipsa, similique quae officia sequi incidunt nihil animi sit reiciendis ea expedita iste et officiis mollitia molestiae est quod ratione pariatur at facere architecto. Reprehenderit quia, minus illo eos fugiat, corrupti modi quae obcaecati officia maiores incidunt accusamus nobis, ea praesentium? Amet nesciunt molestiae perspiciatis iusto, praesentium accusamus enim?</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/talan.svg" alt="foto">
+                                <p class="review-name">Talan Botosh</p>
+                                <p class="review-profession">Lead designer</p>
+                                <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus doloribus unde quis, cupiditate reprehenderit nemo nobis error quae quasi placeat harum, odit vel iste culpa molestiae distinctio perferendis necessitatibus quo numquam fuga excepturi. Quod ut doloremque quo cum illo consequatur id ducimus amet facilis inventore minima recusandae, voluptate fugiat exercitationem!</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/james.svg" alt="foto">
+                                <p class="review-name">Джейн Амінофф</p>
+                                <p class="review-profession">Lead designer</p>
+                                <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aperiam quo quaerat minima minus incidunt perferendis velit dolorem qui saepe commodi nulla voluptatibus provident asperiores voluptatum. Dolorum molestias consequuntur exercitationem?</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/talan.svg" alt="foto">
+                                <p class="review-name">Talan Botosh</p>
+                                <p class="review-profession">Lead designer</p>
+                                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur iusto animi, eligendi ad cupiditate veritatis velit quaerat ab, asperiores quas saepe dolores tenetur nemo vero, ipsum voluptas rem quos. Iusto quia ex, odio architecto quidem totam inventore dolorum veniam perferendis nulla possimus praesentium ratione vel itaque ullam at alias?</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/allison.svg" alt="foto">
+                                <p class="review-name">Allison Herwitz</p>
+                                <p class="review-profession">Lead designer</p>
+                                <p class="review-text right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quasi numquam voluptatibus voluptatem repellendus consequatur tempore saepe, nesciunt obcaecati laboriosam facilis, illum veniam dolores similique omnis totam eum est. Repudiandae laudantium necessitatibus porro adipisci quasi obcaecati quisquam excepturi numquam et accusantium doloremque, fuga, similique veritatis, sit alias eligendi impedit mollitia amet reiciendis. Nostrum voluptates ratione dolore aliquid debitis ad incidunt.</p>
+                            </li>
+                            <li class="review">
+                                <img class="review-foto" src="./img/reviews/james.svg" alt="foto">
+                                <p class="review-name">James Aminoff</p>
+                                <p class="review-profession">Lead designer</p>
+                                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum nobis rem inventore alias atque quidem minima perspiciatis minus molestias provident dignissimos eius impedit quaerat quod, praesentium eos qui hic, aut voluptates dolores quos. Illo nisi ipsum cupiditate tenetur officia.</p>
+                            </li>
+                        </ul>
+                </div>
+                </div>
+            </section>
+
+            <section id="pricing" class="pricing page">
+                <div class="inner">
+                    <div class="pricing-caption">
+                        <h2 class="pricing-caption__title">Прайс</h2>
+                        <h3 class="projects-caption__subtitle">Актуальні ціни</h3>
+                    </div>
+                    <div class="pricing__content">
+                        <h3 class="pricing__content_subtitle">Я знаю, що дизайн і веб-розробника – це справа смаку. Для початку, вам потрібно знати мене краще. Зі свого боку можу вам запропонувати:</h3>
+                        <ul class="pricing__content_list">
+                            <li class="pricing__content_item">Безкоштовну он-лайн консультацію</li>
+                            <li class="pricing__content_item">Ескізи до остаточного варіанту</li>
+                            <li class="pricing__content_item">До 3 ітерацій редагування безкоштовно</li>
+                        </ul>
+                    </div>
+                    <div class="pricing__container">
+                        <div class="pricing__item">
+                            <div class="pricing__cards">
+                                <div class="price-card">
+                                    <div class="price-card__content">
+                                        <div class="price-card__container">
+                                            <div class="price-card__caption">
+                                                <h3 class="price-card__caption_title">Погодинно</h3>
+                                                <p class="price-card__caption_price" style="color: rgba(113, 206, 0, 1);">$20/ за годину</p>
+                                            </div>
+                                            <div class="price-card__contacts">
+                                                <div class="price-card-socials">
+                                                    <ul class="price-card-socials__list">
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://www.linkedin.com/in/serhii-blokh-9b2a452a5">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/linkedin.svg" alt="linkedin">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://t.me/@SerhiiBlokh">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/telegram.svg" alt="telegram">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://api.whatsapp.com/send?phone=380930306522">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/whatsApp.svg" alt="whatsApp">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-card__list">
+                                            <li class="price-card__item">Приєднаюсь до вашої віддаленої команди</li>
+                                            <li class="price-card__item">Передаю вам усі матеріали вчасно</li>
+                                            <li class="price-card__item">На зв'язку в робочий час</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-card">
+                                    <div class="price-card__content">
+                                        <div class="price-card__container">
+                                            <div class="price-card__caption">
+                                                <h3 class="price-card__caption_title">Повний день</h3>
+                                                <p class="price-card__caption_price" style="color: rgba(237, 213, 0, 1);">$1000/ за місяць</p>
+                                            </div>
+                                            <div class="price-card__contacts">
+                                                <div class="price-card-socials">
+                                                    <ul class="price-card-socials__list">
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://www.linkedin.com/in/serhii-blokh-9b2a452a5">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/linkedin.svg" alt="linkedin">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://t.me/@SerhiiBlokh">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/telegram.svg" alt="telegram">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="price-card-socials__item">
+                                                            <a href="https://api.whatsapp.com/send?phone=380930306522">
+                                                                <div class="price-card-socials__icon">
+                                                                    <img src="./img/socials/whatsApp.svg" alt="whatsApp">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-card__list">
+                                            <li class="price-card__item">Укладаємо договір</li>
+                                            <li class="price-card__item">Я поважаю ваші терміни</li>
+                                            <li class="price-card__item">Ви отримуєте всі матеріали</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-thumb">
+                                <div class="price-thumb__content">
+                                    <img src="./img/pricing/pricing.svg" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="contacts page">
+                <div class="inner">
+                    <div class="contacts-caption">
+                        <h2 class="contacts-caption__title">Контакти</h2>
+                        <h3 class="projects-caption__subtitle">Просто привітайтесь</h3>
+                    </div>
+                    <div class="contacts__content">
+                        <h3 class="contacts__content_subtitle">Напишіть мені кілька рядків. Я хотів би вас почути.</h3>
+                    </div>
+                    <div class="contacts__container">
+                        <div class="contacts__item">
+                            <div class="contacts-message">
+                                <div class="contacts-message__content">
+                                    <form id="form" class="contacts-form" action="#">
+                                        <div class="contacts-form__container">
+                                            <div class="contacts-form__item">
+                                                <label for="name" class="contacts-form__title"></label>
+                                                <input id="name" class="contacts-form__name req" type="text" name="name" placeholder="Ім’я*">
+                                            </div>
+                                            <div class="contacts-form__item">
+                                                <label for="email" class="contacts-form__title"></label>
+                                                <input id="email" class="contacts-form__email email req" type="email" name="email" placeholder="Е-мейл*">
+                                            </div>
+                                        </div>
+                                        <div class="contacts-form__message">
+                                            <div class="contacts-form__message_item">
+                                                <textarea id="text" class="contacts-form__text" name="text" placeholder="Повідомлення"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="contacts-form__file">
+                                            <div class="contacts-form__file_container">
+                                                <label for="file" class="contacts-form__file_btn">додати файл...</label>
+                                                <input id="file" class="contacts-form__file_input" type="file" name="file">
+                                            </div>
+                
+                                            <div id="preview" class="contacts-form__file_preview"></div>
+                                        </div>
+                                        <button id="send-message" class="contacts-form__btn" type="submit"><span class="contacts-form__link">Відправити</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts-info">
+                                <ul class="contacts-info__list">
+                                    <li class="contacts-info__item">
+                                        <p class="contacts-info__item_title">Сергій Бльох</p>
+                                        <p class="contacts-info__item_desc">фрілансер</p>
+                                    </li>
+                                    <li class="contacts-info__item">
+                                        <p class="contacts-info__item_title">Телефон</p>
+                                        <p class="contacts-info__item_desc"><a href="tel:+380967831428">+380967831428</a></p>
+                                        <p class="contacts-info__item_desc"><a href="tel:+380930306522">+380930306522</a></p>
+                                    </li>
+                                    <li class="contacts-info__item">
+                                        <p class="contacts-info__item_title">Е-мейл</p>
+                                        <p class="contacts-info__item_desc">0997198431@ukr.net</p>
+                                    </li>
+                                    <li class="contacts-info__item">
+                                        <p class="contacts-info__item_title">Локація</p>
+                                        <p class="contacts-info__item_desc">Луцьк (UA)</p>
+                                    </li>
+                                </ul>
+                                <ul class="contacts-info__socials-list">
+                                    <li class="contacts-info__socials-item">
+                                        <a href="https://www.linkedin.com/in/serhii-blokh-9b2a452a5">
+                                            <div class="contacts-info__socials-item_icon">
+                                                <img src="./img/socials/linkedin.svg" alt="linkedin">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contacts-info__socials-item">
+                                        <a href="https://webstudio-talk.slack.com/team/U067WH9LB0E">
+                                            <div class="contacts-info__socials-item_icon">
+                                                <img src="./img/socials/slack.svg" alt="slack">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contacts-info__socials-item">
+                                        <a href="https://t.me/@SerhiiBlokh">
+                                            <div class="contacts-info__socials-item_icon">
+                                                <img src="./img/socials/telegram.svg" alt="telegram">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contacts-info__socials-item">
+                                        <a href="https://api.whatsapp.com/send?phone=380930306522">
+                                            <div class="contacts-info__socials-item_icon">
+                                                <img src="./img/socials/whatsApp.svg" alt="whatsApp">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contacts-info__socials-item">
+                                        <a href="mailto:0967831428blokh@gmail.com">
+                                            <div class="contacts-info__socials-item_icon">
+                                                <img src="./img/socials/google.svg" alt="google">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer__container">
+                    <div class="footer__item">
+                        <div class="footer__caption">
+                            <p class="footer__caption_title"><span>W</span><span>eb</span>Studio<span>,</span></p>
+                            <p class="footer__caption_text">2024</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__caption_text">Розроблено Сергій Бльох</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
