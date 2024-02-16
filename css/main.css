@@ -3363,7 +3363,7 @@ img {
   background: rgb(244, 67, 54);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   * {
     margin: 0px;
     padding: 0px;
@@ -3483,9 +3483,7 @@ img {
     left: -30px;
   }
   .header-title__headline {
-    height: 65px;
     font-family: RobotoBlack;
-    font-size: 32px;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
   .header-title__location {
@@ -3552,8 +3550,7 @@ img {
   .services,
   .projects,
   .pricing,
-  .contacts,
-  .footer {
+  .contacts {
     margin-top: 50px;
   }
   .about__container {
@@ -3587,6 +3584,7 @@ img {
     margin: -7px;
   }
   .about__content_title {
+    margin-top: 50px;
     font-size: 16px;
   }
   .about__btn {
@@ -3913,6 +3911,7 @@ img {
     font-size: 16px;
   }
   .pricing__cards {
+    margin-top: 50px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -4021,6 +4020,8 @@ img {
   }
   .contacts-message {
     padding: 40px 10px;
+    border-left: none;
+    border-right: none;
   }
   .contacts-form {
     padding: 0px;
@@ -4044,13 +4045,16 @@ img {
   }
   .contacts-info {
     margin: 0px 40px;
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
     padding: 40px 15px;
   }
   .contacts-info__socials-list {
     padding: 0px;
     width: 40px;
+  }
+  .footer {
+    margin-top: 100px;
   }
   .footer__container {
     display: -webkit-box;
@@ -4071,5 +4075,34 @@ img {
   }
   .footer_text {
     font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .header-title__headline {
+    height: 110px;
+    font-size: 56px;
+  }
+}
+@media (max-width: 500px) {
+  .header-title__headline {
+    height: 90px;
+    font-size: 48px;
+  }
+}
+@media (max-width: 450px) {
+  .header-title__headline {
+    height: 85px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 400px) {
+  .header-title__headline {
+    height: 75px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 350px) {
+  .header-title__headline {
+    font-size: 32px;
   }
 }/*# sourceMappingURL=main.css.map */

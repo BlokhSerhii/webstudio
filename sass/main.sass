@@ -1700,7 +1700,8 @@ img
     margin: 2px
     background: $elemColor
 
-@media ( max-width: 400px ) 
+
+@media ( max-width: 430px ) 
     *
         margin: 0px
         padding: 0px
@@ -1790,9 +1791,9 @@ img
             height: 2px
             left: -30px
         &__headline
-            height: 65px
+            // height: 120px
             font-family: RobotoBlack
-            font-size: 32px
+            // font-size: 64px
             -webkit-text-stroke: 1px rgb(255, 255, 255)
         &__location
             margin-top: 10px
@@ -1833,8 +1834,7 @@ img
     .services,
     .projects,
     .pricing,
-    .contacts,
-    .footer
+    .contacts
         margin-top: 50px
     .about
         &__container
@@ -1850,6 +1850,7 @@ img
             margin: -7px
         &__content
             &_title
+                margin-top: 50px
                 font-size: 16px
         &__btn
             margin-top: 40px
@@ -2021,6 +2022,7 @@ img
                 margin: 50px 7px 7px 7px
                 font-size: 16px
         &__cards
+            margin-top: 50px
             flex: 0 1 100%
     .price-card
         @include alignCenter()
@@ -2076,6 +2078,8 @@ img
                 font-size: 16px
     .contacts-message
         padding: 40px 10px
+        border-left: none
+        border-right: none
     .contacts-form
         padding: 0px
         &__container
@@ -2088,16 +2092,51 @@ img
             margin: 15px 10px
     .contacts-info  
         margin: 0px 40px
-        margin-top: 30px
+        margin-top: 50px
         width: 100%
         padding: 40px 15px
         &__socials-list
             padding: 0px
             width: 40px
     .footer
+        margin-top: 100px
         &__container
             @include alignColumn()
             justify-content: center
             height: 100px 
         &_text
             font-size: 12px
+
+
+
+
+
+
+@media ( max-width: 600px ) 
+    .header-title
+        &__headline
+            height: 110px
+            font-size: 56px
+
+@media ( max-width: 500px ) 
+    .header-title
+        &__headline
+            height: 90px
+            font-size: 48px
+
+@media ( max-width: 450px ) 
+    .header-title
+        &__headline
+            height: 85px
+            font-size: 42px
+
+@media ( max-width: 400px ) 
+    .header-title
+        &__headline
+            height: 75px
+            font-size: 36px
+
+@media ( max-width: 350px ) 
+    .header-title
+        &__headline
+            font-size: 32px
