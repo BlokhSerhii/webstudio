@@ -152,7 +152,7 @@ img
     width: 100vw
     height: 100vh
     background-color: $shadow
-    overflow-y: srcoll
+    overflow-y: auto
     &__win
         position: relative
         @include alignCenter()
@@ -334,7 +334,7 @@ img
     visibility: hidden
     transform: translateX(-50%)
     transition: 1s ease
-    overflow: hidden
+    overflow: auto
     &__container
         @include alignCenter()
     &__item
@@ -428,28 +428,28 @@ img
 // header------------------------------------------------------------------
 .header
     position: relative
-    @include alignCenter()
+    display: flex
+    align-items: center
     background: url('../img/background-header.svg') no-repeat center top
     background-size: cover
+    height: 100vh
+    width: 100vw
     &__container
         @include alignCenter()
         justify-content: start
-        width: 100%
     &__item
         @include alignColumn()
         align-items: start
-        height: 100vh
 .header-title
     &__subtitle
         position: relative
         margin-left: 30px
         font-family: RobotoRegular
-        // font-size: 20px
         font-weight: normal
         text-transform: capitalize
     &__subtitle::before
         content: ''
-        // display: block
+        display: block
         width: 20px
         height: 2px
         position: absolute
@@ -468,17 +468,18 @@ img
         margin-top: 50px
         padding: 5px 10px
         font-family: RobotoRegular
-        // font-size: 20px
         border-left: 2px solid $elemColor
     &__location span:nth-of-type(1)
         font-family: RobotoRegular
-        // font-size: 20px
         color: rgb(255, 255, 255)
 .header-socials
-    @include alignCenter()
     position: absolute
-    left: -85px
-    transform: rotate(-90deg)
+    left: 0px
+    transform: translateX(-50%)
+    &__container
+        margin-left: 130px
+        @include alignCenter()
+        transform: rotate(-90deg)
     &__list
         @include alignCenter()
         list-style: none
@@ -1738,6 +1739,9 @@ img
     .square:nth-child(10)
         width: 65px
         height: 65px
+    .modal 
+        &__win
+            width: 100%
     .inner
         margin: 0px 40px
     .burger
@@ -1795,7 +1799,8 @@ img
             padding: 5px 10px
             border-left: 2px solid $elemColor
     .header-socials
-        left: -110px
+        &__container
+            margin-left: 30px
         &__list
             margin-left: 3px
         &__item
@@ -1836,12 +1841,13 @@ img
             margin-top: 50px
             @include alignColumn()
         &__item
-            @include alignColumn()
+            justify-content: start
             flex: 0 1 100%
             margin: 7px
         &__frame
-            width: 95%
+            width: auto
             padding: 5px
+            margin: -7px
         &__content
             &_title
                 font-size: 16px
@@ -1877,9 +1883,9 @@ img
             font-size: 16px
             width: 100%
         &__frame
-            margin-top: 50px
-            width: 95%
+            width: auto
             padding: 5px
+            margin: 50px -7px -7px -7px
     .skills-list
         width: auto
         margin-left: 0px
@@ -1993,11 +1999,6 @@ img
             @include alignCenter()
             align-items: start
             margin-top: 40px
-        &__indicator
-            width: 6px
-            height: 6px
-            margin: 4px
-            background: $textColor
     .pricing
         &__content
             flex-direction: column
@@ -2074,9 +2075,9 @@ img
                 margin: 50px 7px
                 font-size: 16px
     .contacts-message
-        padding: 30px 15px
+        padding: 40px 10px
     .contacts-form
-        padding: 20px 0px
+        padding: 0px
         &__container
             flex-direction: column
             align-items: center
@@ -2084,14 +2085,15 @@ img
         &__item
             width: 90%
             flex: 0 1 100%
-            margin: 20px 0px
+            margin: 15px 10px
     .contacts-info  
-        margin: 0px 47px
+        margin: 0px 40px
+        margin-top: 30px
         width: 100%
         padding: 40px 15px
         &__socials-list
             padding: 0px
-            width: 36px
+            width: 40px
     .footer
         &__container
             @include alignColumn()

@@ -274,7 +274,7 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(157, 166, 171, 0.3);
-  overflow-y: srcoll;
+  overflow-y: auto;
 }
 .modal__win {
   position: relative;
@@ -643,7 +643,7 @@ img {
           transform: translateX(-50%);
   -webkit-transition: 1s ease;
   transition: 1s ease;
-  overflow: hidden;
+  overflow: auto;
 }
 .overlay__container {
   display: -webkit-box;
@@ -812,14 +812,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: url("../img/background-header.svg") no-repeat center top;
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 .header__container {
   display: -webkit-box;
@@ -834,7 +833,6 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 100%;
 }
 .header__item {
   display: -webkit-box;
@@ -853,7 +851,6 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  height: 100vh;
 }
 
 .header-title__subtitle {
@@ -865,6 +862,7 @@ img {
 }
 .header-title__subtitle::before {
   content: "";
+  display: block;
   width: 20px;
   height: 2px;
   position: absolute;
@@ -895,6 +893,14 @@ img {
 }
 
 .header-socials {
+  position: absolute;
+  left: 0px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.header-socials__container {
+  margin-left: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,8 +910,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  left: -85px;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -3409,6 +3413,9 @@ img {
     width: 65px;
     height: 65px;
   }
+  .modal__win {
+    width: 100%;
+  }
   .inner {
     margin: 0px 40px;
   }
@@ -3486,8 +3493,8 @@ img {
     padding: 5px 10px;
     border-left: 2px solid rgb(244, 67, 54);
   }
-  .header-socials {
-    left: -110px;
+  .header-socials__container {
+    margin-left: 30px;
   }
   .header-socials__list {
     margin-left: 3px;
@@ -3566,27 +3573,18 @@ img {
             align-items: center;
   }
   .about__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin: 7px;
   }
   .about__frame {
-    width: 95%;
+    width: auto;
     padding: 5px;
+    margin: -7px;
   }
   .about__content_title {
     font-size: 16px;
@@ -3651,9 +3649,9 @@ img {
     width: 100%;
   }
   .skills__frame {
-    margin-top: 50px;
-    width: 95%;
+    width: auto;
     padding: 5px;
+    margin: 50px -7px -7px -7px;
   }
   .skills-list {
     width: auto;
@@ -3877,12 +3875,6 @@ img {
             align-items: start;
     margin-top: 40px;
   }
-  .reviews-slider__indicator {
-    width: 6px;
-    height: 6px;
-    margin: 4px;
-    background: rgb(157, 166, 171);
-  }
   .pricing__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4028,10 +4020,10 @@ img {
     font-size: 16px;
   }
   .contacts-message {
-    padding: 30px 15px;
+    padding: 40px 10px;
   }
   .contacts-form {
-    padding: 20px 0px;
+    padding: 0px;
   }
   .contacts-form__container {
     -webkit-box-orient: vertical;
@@ -4048,16 +4040,17 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
-    margin: 20px 0px;
+    margin: 15px 10px;
   }
   .contacts-info {
-    margin: 0px 47px;
+    margin: 0px 40px;
+    margin-top: 30px;
     width: 100%;
     padding: 40px 15px;
   }
   .contacts-info__socials-list {
     padding: 0px;
-    width: 36px;
+    width: 40px;
   }
   .footer__container {
     display: -webkit-box;
