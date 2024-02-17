@@ -430,10 +430,10 @@ img
     position: relative
     display: flex
     align-items: center
-    background: url('../img/background-header.svg') no-repeat center top
+    background: url('../img/background-header.svg') no-repeat center center
     background-size: cover
     height: 100vh
-    width: 100vw
+    width: 100%
     &__container
         @include alignCenter()
         justify-content: start
@@ -750,7 +750,6 @@ img
     @include alignColumn()
     align-items: start
     width: 100%
-    margin-left: 10px
     list-style: none
     &__item
         position: relative
@@ -1699,16 +1698,555 @@ img
     margin: 2px
     background: $elemColor
 
+@media ( max-width: 1600px ) 
+    .about
+        &__frame
+            width: 85%
+    .skills
+        &__frame
+            width: 95%
+    .reviews-slider
+        padding-top: 60px
+
+@media ( max-width: 1500px ) 
+    .projects__item 
+        flex-direction: column
+    .projects-slider 
+        margin-top: 100px
+    .pricing__cards 
+        flex: 0 1 60%
+    .price-thumb
+        flex: 0 1 40%
+    .price-card
+        &__content 
+            flex-direction: column
+        &__container
+            width: 100%
+        &__list
+            width: 100%
+            padding: 0px 20px
+    .contacts-info
+        width: 90%
+
+@media ( max-width: 1350px ) 
+    *
+        font-size: 18px
+    .inner
+        margin: 0px 120px
+    .about-caption,
+    .services-caption,
+    .projects-caption,
+    .pricing-caption,
+    .contacts-caption
+        width: 75%
+        &__title
+            margin-left: 10px
+            font-size: 72px
+        &__subtitle
+            font-size: 26px
+            line-height: 100%
+    .about__content_title,
+    .skills__title,
+    .service-card__title,
+    .projects__subtitle,
+    .pricing__content_subtitle,
+    .pricing__content_item,
+    .price-card__caption_title,
+    .contacts__content_subtitle 
+        font-size: 20px
+    .navbar
+        &__logo
+            &_icon
+                width: 50px
+            &_title
+                font-size: 18px
+            &_title span:nth-child(1)
+                font-size: 18px
+            &_title span:nth-child(2)
+                font-size: 18px
+
+@media ( max-width: 1250px ) 
+    *
+        font-size: 16px
+    .inner
+        margin: 0px 100px
+    .about-caption,
+    .services-caption,
+    .projects-caption,
+    .pricing-caption,
+    .contacts-caption
+        width: 75%
+        &__title
+            margin-left: 10px
+            font-size: 68px
+        &__subtitle
+            font-size: 20px
+            line-height: 100%
+    .about__content_title,
+    .skills__title,
+    .service-card__title,
+    .projects__subtitle,
+    .pricing__content_subtitle,
+    .pricing__content_item,
+    .price-card__caption_title,
+    .contacts__content_subtitle 
+        font-size: 18px
+    .about__frame,
+    .skills__frame,
+    .projects-slider__container,
+    .price-card__content
+        padding: 10px
+    .navbar
+        &__logo
+            &_title
+                font-size: 16px
+            &_title span:nth-child(1)
+                font-size: 16px
+            &_title span:nth-child(2)
+                font-size: 16px
+            &_text
+                font-size: 10px
+    .header-socials__container
+        margin-left: 100px
+    .contacts-form
+        padding: 0px
+        &__container
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__item
+            width: 85%
+            flex: 0 1 100%
+            margin: 15px 0px
+        &__message
+            width: 90%
+            &_item
+                margin: 0px 15px
+        &__file
+            width: 90%
+            margin-left: 20px
+
+@media ( max-width: 1150px )
+    .inner
+        margin: 0px 90px
+    .menubar__lang
+        margin-left: 30px
+    .about__frame
+        width: 95%
+    .skills__frame
+        width: 70%
+    .skills
+        &__container
+            margin-top: 50px
+            flex-direction: column
+        &__item
+            margin: 50px 30px
+    .education__line
+        height: 70px
+    .services__container
+        margin: 100px -5px 0px -5px
+    .service-card__content
+        margin: 5px
+    .service-thumb__content
+        margin: 5px
+
+@media ( max-width: 1100px )
+    .skills__frame 
+        width: 85%
+    .service-card
+        flex: 0 1 50%
+    .service-thumb
+        flex: 0 1 50%
+    .projects-slider__container 
+        width: 95%
+    .pricing__content
+        flex-direction: column
+    .pricing__content_list
+        margin-left: 20px
+    .pricing__item 
+        width: 75%
+        flex-direction: column
+    .pricing__cards
+        margin-top: 50px
+    .price-card
+        justify-content: center
+    .price-card__caption_title
+        line-height: 150%
+    .price-card__caption_price
+        line-height: 150%
+    .price-card__list
+        padding: 30px 20px
+    .price-thumb
+        width: 100%
+        justify-content: center
+    // .price-thumb__content
+    //     width: 50%
+
+@media ( max-width: 1000px ) 
+    .menubar__item
+        margin-left: 10px
+    .menubar__lang
+        margin-left: 15px
+    .about
+        &__container
+            @include alignColumn()
+        &__content
+            &_title
+                margin-top: 70px
+        &__btn
+            margin-top: 50px
+    .contacts
+        &__container
+            @include alignColumn()
+            margin-left: -90px
+            margin-right: -90px
+        &__item
+            flex: 0 1 100%
+            padding: 0px
+            margin-top: 20px
+        &__content
+            &_subtitle
+                flex: 0 1 100%
+                margin: 70px 15px
+                font-size: 16px
+    .contacts-message
+        padding: 40px 10px
+        border-left: none
+        border-right: none
+    .contacts-info  
+        margin: 0px 85px
+        margin-top: 50px
+        width: 55%
+        padding: 40px 30px
+        &__socials-list
+            padding: 0px
+            width: 40px
+
+
+@media ( max-width: 800px ) 
+    *
+        font-size: 14px
+    .square:nth-child(1)
+        width: 135px
+        height: 135px
+    .square:nth-child(2)
+        width: 105px
+        height: 105px
+    .square:nth-child(3)
+        width: 102px
+        height: 102px
+    .square:nth-child(4)
+        width: 110px
+        height: 110px
+    .square:nth-child(5)
+        width: 80px
+        height: 80px
+    .square:nth-child(6)
+        width: 105px
+        height: 105px
+    .square:nth-child(7)
+        width: 90px
+        height: 90px
+    .square:nth-child(8)
+        width: 100px
+        height: 100px
+    .square:nth-child(9)
+        width: 105px
+        height: 105px
+    .square:nth-child(10)
+        width: 85px
+        height: 85px
+    .modal 
+        &__win
+            width: 100%
+    .inner
+        margin: 0px 70px
+    .burger
+        display: block
+    .overlay-menu
+        &__link
+            font-size: 20px
+    .menubar
+        &__item
+            display: none
+        &__burger
+            margin-left: 15px 
+    .navbar
+        &__logo
+            &_icon
+                width: 50px
+            &_title
+                font-size: 20px
+            &_title span:nth-child(1)
+                font-size: 20px
+            &_title span:nth-child(2)
+                font-size: 20px
+            &_text
+                font-size: 12px
+    .navbar .inner
+        height: 80px
+    .select-lang
+        &__option 
+            font-size: 20px
+        &__link
+            font-size: 20px
+        &__thumb
+            @include alignCenter()
+            width: 14px
+            margin-left: 5px
+    .header-title
+        &__subtitle
+            position: relative
+            margin-left: 30px
+        &__subtitle::before
+            content: ''
+            width: 20px
+            height: 2px
+            left: -30px
+        &__headline
+            font-family: RobotoBlack
+            -webkit-text-stroke: 1px rgb(255, 255, 255)
+        &__location
+            margin-top: 10px
+            padding: 5px 10px
+            border-left: 2px solid $elemColor
+    .header-socials
+        &__container
+            margin-left: 60px
+        &__list
+            margin-left: 3px
+        &__item
+            margin: 2px
+        &__icon
+            @include alignCenter()
+            width: 22px
+            height: 22px
+            padding: 4px
+        &__icon img
+            height: 100%
+            width: auto
+        &__line
+            width: 30px
+            height: 2px
+    .about-caption,
+    .services-caption,
+    .projects-caption,
+    .pricing-caption,
+    .contacts-caption
+        width: 100%
+        border-right: 1px solid $elemColor
+        &__title
+            margin-left: 10px
+            font-size: 48px
+        &__subtitle
+            font-size: 20px
+            line-height: 100%
+    .about,
+    .services,
+    .projects,
+    .pricing,
+    .contacts
+        margin-top: 70px
+    .about
+        &__container
+            margin-top: 70px
+            @include alignColumn()
+        &__item
+            justify-content: start
+            flex: 0 1 100%
+            margin: 15px
+        &__frame
+            width: auto
+            padding: 7px
+        &__content
+            &_title
+                font-size: 16px
+    .about-socials
+        right: 10px
+        top: 10px
+        &__list
+            @include alignColumn()
+            list-style: none
+            padding: 0px
+        &__item
+            margin: 3px
+        &__icon
+            width: 30px
+            height: 30px
+            padding: 7px
+        &__icon:hover::before
+            width: 100%
+            height: 100%
+            border: 2px solid rgb(255, 255, 255)
+            transition: 0.3s
+    .skills
+        &__container
+            margin-top: 70px
+            display: flex
+            flex-direction: column
+        &__item
+            flex: 0 1 100%
+            margin: 15px
+        &__title
+            font-size: 16px
+            width: 100%
+        &__frame
+            width: auto
+            padding: 7px
+            margin: 70px 0px 0px 0px
+    .skills-list
+        width: 100%
+        margin-left: 0px
+        &__item
+            padding-left: 12px
+            margin: 2px 0px
+        &__item::before
+            content: ''
+            top: 8px
+            width: 5px
+            height: 5px
+    .skills-cards
+        @include alignColumn()
+        width: 100%
+    .skill-card
+        width: 100%
+    .education
+        width: 100%
+        &__line
+            width: 2px
+            height: 70px
+        &__content
+            width: 100%
+            padding-left: 20px
+    .services
+        &__container
+            margin: 100px 0px 0px 0px
+        &__item
+            width: 100%
+            padding: 30px 0px
+    .service-card
+        flex: 0 1 100%
+        &__content
+            margin: 0px 90px
+            padding: 20px
+        &__title
+            margin: 10px
+            padding-left: 15px
+            font-size: 16px
+        &__item
+            padding-left: 20px
+            margin: 0px 10px
+            font-size: 14px
+    .service-thumb
+        flex: 0 1 100%
+        &__content
+            margin: 30px 90px
+    .projects
+        &__container
+            margin-top: 70px
+        &__item
+            @include alignColumn()
+        &__subtitle
+            margin: 50px 15px 0px 15px
+            font-size: 16px
+    .projects-content
+        flex: 0 1 100%
+        margin: 15px
+        &__text
+            margin: 5px 0px
+    .projects-slider
+        margin-top: 70px
+        margin-left: -50px
+        margin-right: -50px
+        flex: 0 1 100%
+        box-sizing: border-box
+        &__container
+            width: 90%
+            padding: 5px
+        &__container:hover .projects-slider__loop
+            width: 30px
+            height: 30px
+            padding: 10px
+        &__indicators
+            margin-top: 10px
+        &__controls
+            &_btn
+                width: 15px
+                height: 80%
+                margin: 5px
+                padding: 10px
+    .projects-indicator
+        margin: 4px
+        &__label
+            width: 25px
+    .reviews-slider
+        padding-top: 50px
+        padding-bottom: 25px
+        &__container
+            @include alignColumn()
+            margin: 0px 40px
+        &__header
+            flex-direction: row
+            width: 100%
+            &_avatar
+                @include alignCenter()
+                width: 140px
+        &__caption
+            margin: 0px 10px
+            width: 100%
+            &_profession
+                font-size: 14px
+        &__content
+            width: 100%
+            margin-left: 0px
+            margin-top: 20px
+            &_text
+                font-size: 14px
+                color: $textColor
+        &__indicators
+            @include alignCenter()
+            align-items: start
+            margin-top: 40px
+    .pricing__item 
+        width: 100%
+    .price-thumb__content
+        width: 100%
+    .contacts
+        &__container
+            @include alignColumn()
+            margin-left: -70px
+            margin-right: -70px
+        &__item
+            flex: 0 1 100%
+            padding: 0px
+            margin-top: 20px
+        &__content
+            &_subtitle
+                flex: 0 1 100%
+                margin: 70px 15px
+                font-size: 16px
+    .contacts-message
+        padding: 40px 10px
+        border-left: none
+        border-right: none
+    .contacts-info  
+        margin: 0px 85px
+        margin-top: 50px
+        width: 60%
+        padding: 40px 15px
+        &__socials-list
+            padding: 0px
+            width: 40px
+    .footer
+        margin-top: 100px
+        &__container
+            @include alignColumn()
+            justify-content: center
+            height: 100px 
+        &_text
+            font-size: 12px
 
 @media ( max-width: 500px ) 
-    *
-        margin: 0px
-        padding: 0px
-        font-family: RobotoLight
-        font-weight: normal
-        font-size: 14px
-        line-height: 150%
-        color: $textColor
     .square:nth-child(1)
         width: 105px
         height: 105px
@@ -1744,16 +2282,9 @@ img
             width: 100%
     .inner
         margin: 0px 40px
-    .burger
-        display: block
     .overlay-menu
         &__link
             font-size: 18px
-    .menubar
-        &__item
-            display: none
-        &__burger
-            margin-left: 15px 
     .navbar
         &__logo
             &_icon
@@ -1766,70 +2297,29 @@ img
                 font-size: 18px
             &_text
                 font-size: 10px
-    .navbar .inner
-        height: 80px
     .select-lang
         &__option 
             font-size: 18px
         &__link
             font-size: 18px
-        &__thumb
-            @include alignCenter()
-            width: 14px
-            margin-left: 5px
     .header
         background: url('../img/background-header-small.svg') no-repeat center center
         background-size: cover
-    .header-title
-        &__subtitle
-            position: relative
-            margin-left: 30px
-        &__subtitle::before
-            content: ''
-            width: 20px
-            height: 2px
-            left: -30px
-        &__headline
-            font-family: RobotoBlack
-            -webkit-text-stroke: 1px rgb(255, 255, 255)
-        &__location
-            margin-top: 10px
-            padding: 5px 10px
-            border-left: 2px solid $elemColor
     .header-socials
         bottom: 20px
         transform: translateX(0%)
         &__container
             transform: rotate(0deg)
             margin-left: 30px
-        &__list
-            margin-left: 3px
-        &__item
-            margin: 2px
-        &__icon
-            @include alignCenter()
-            width: 22px
-            height: 22px
-            padding: 4px
-        &__icon img
-            height: 100%
-            width: auto
-        &__line
-            width: 30px
-            height: 2px
     .about-caption,
     .services-caption,
     .projects-caption,
     .pricing-caption,
     .contacts-caption
-        width: 100%
-        border-right: 1px solid $elemColor
         &__title
-            margin-left: 10px
             font-size: 42px
         &__subtitle
             font-size: 18px
-            line-height: 100%
     .about,
     .services,
     .projects,
@@ -1841,8 +2331,6 @@ img
             margin-top: 50px
             @include alignColumn()
         &__item
-            justify-content: start
-            flex: 0 1 100%
             margin: 7px
         &__frame
             width: auto
@@ -1857,32 +2345,11 @@ img
     .about-socials
         right: 7px
         top: 7px
-        &__list
-            @include alignColumn()
-            list-style: none
-            padding: 0px
-        &__item
-            margin: 3px
-        &__icon
-            width: 30px
-            height: 30px
-            padding: 7px
-        &__icon:hover::before
-            width: 100%
-            height: 100%
-            border: 2px solid rgb(255, 255, 255)
-            transition: 0.3s
     .skills
         &__container
             margin-top: 50px
-            display: flex
-            flex-direction: column
         &__item
-            flex: 0 1 100%
             margin: 7px
-        &__title
-            font-size: 16px
-            width: 100%
         &__frame
             width: auto
             padding: 5px
@@ -1890,84 +2357,29 @@ img
     .skills-list
         width: auto
         margin-left: 0px
-        &__item
-            padding-left: 12px
-            margin: 2px 0px
-        &__item::before
-            content: ''
-            top: 8px
-            width: 5px
-            height: 5px
-    .skills-cards
-        @include alignColumn()
-        width: 100%
-    .skill-card
-        width: 100%
     .education
-        width: 100%
         &__line
-            width: 2px
             height: 90px
-            margin-left: 20px
-            background: rgb(255, 255, 255)
-        &__content
-            width: 100%
-            padding-left: 20px
-    .services
-        &__container
-            margin: 100px 0px 0px 0px
-        &__item
-            width: 100%
-            padding: 30px 0px
     .service-card
         flex: 0 1 100%
         &__content
             margin: 0px 10px
-            padding: 20px
-        &__title
-            margin: 10px
-            padding-left: 15px
-            font-size: 16px
-        &__item
-            padding-left: 20px
-            margin: 0px 10px
-            font-size: 14px
     .service-thumb
         flex: 0 1 100%
+        &__content
+            margin: 10px
     .projects
         &__container
             margin-top: 50px
-        &__item
-            @include alignColumn()
         &__subtitle
             margin: 50px 7px 0px 7px
             font-size: 16px
     .projects-content
-        flex: 0 1 100%
         margin: 7px
-        &__text
-            margin: 5px 0px
     .projects-slider
         margin-top: 50px
         margin-left: -30px
         margin-right: -30px
-        flex: 0 1 100%
-        box-sizing: border-box
-        &__container
-            width: 90%
-            padding: 5px
-        &__container:hover .projects-slider__loop
-            width: 30px
-            height: 30px
-            padding: 10px
-        &__indicators
-            margin-top: 10px
-        &__controls
-            &_btn
-                width: 15px
-                height: 80%
-                margin: 5px
-                padding: 10px 10px
     .projects-indicator
         margin: 3px
         &__label
@@ -1975,31 +2387,9 @@ img
     .reviews-slider
         padding-top: 30px
         padding-bottom: 15px
-        &__container
-            @include alignColumn()
-            margin: 0px 40px
         &__header
-            flex-direction: row
-            width: 100%
             &_avatar
-                @include alignCenter()
                 width: 120px
-        &__caption
-            margin: 0px 10px
-            width: 100%
-            &_profession
-                font-size: 14px
-        &__content
-            width: 100%
-            margin-left: 0px
-            margin-top: 20px
-            &_text
-                font-size: 14px
-                color: $textColor
-        &__indicators
-            @include alignCenter()
-            align-items: start
-            margin-top: 40px
     .pricing
         &__content
             flex-direction: column
@@ -2022,7 +2412,7 @@ img
                 margin: 50px 7px 7px 7px
                 font-size: 16px
         &__cards
-            margin-top: 50px
+            margin: 50px 0px 0px 0px
             flex: 0 1 100%
     .price-card
         @include alignCenter()
@@ -2062,24 +2452,15 @@ img
             height: 4px
     .price-thumb
         flex: 0 1 100%
+        margin: 0px
     .contacts
         &__container
-            @include alignColumn()
             margin-left: -40px
             margin-right: -40px
-        &__item
-            flex: 0 1 100%
-            padding: 0px
-            margin-top: 20px
         &__content
             &_subtitle
                 flex: 0 1 100%
                 margin: 50px 7px
-                font-size: 16px
-    .contacts-message
-        padding: 40px 10px
-        border-left: none
-        border-right: none
     .contacts-form
         padding: 0px
         &__container
@@ -2099,25 +2480,37 @@ img
             margin-left: 20px
     .contacts-info  
         margin: 0px 40px
-        margin-top: 50px
         width: 100%
-        padding: 40px 15px
-        &__socials-list
-            padding: 0px
-            width: 40px
-    .footer
-        margin-top: 100px
-        &__container
-            @include alignColumn()
-            justify-content: center
-            height: 100px 
-        &_text
-            font-size: 12px
 
+@media ( max-width: 1100px ) 
+    .header-title
+        &__headline
+            height: 150px
+            font-size: 99px
 
+@media ( max-width: 1000px ) 
+    .header-title
+        &__headline
+            height: 150px
+            font-size: 96px
 
+@media ( max-width: 900px ) 
+    .header-title
+        &__headline
+            height: 140px
+            font-size: 82px
 
+@media ( max-width: 800px ) 
+    .header-title
+        &__headline
+            height: 120px
+            font-size: 72px
 
+@media ( max-width: 700px ) 
+    .header-title
+        &__headline
+            height: 110px
+            font-size: 64px
 
 @media ( max-width: 600px ) 
     .header-title
