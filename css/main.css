@@ -2175,12 +2175,12 @@ img {
 }
 .projects-indicator__text {
   display: none;
-  font-family: RobotoRegular;
+  font-family: RobotoMedium;
   color: rgb(244, 67, 54);
 }
 .projects-indicator__label {
   width: 45px;
-  height: 1px;
+  height: 2px;
   background: rgb(157, 166, 171);
 }
 
@@ -2285,7 +2285,7 @@ img {
           align-items: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   margin-top: 40px;
 }
 .reviews-slider__indicator {
@@ -3348,7 +3348,7 @@ img {
 }
 
 .activeProjectLabel {
-  height: 2px;
+  height: 3px;
   background: rgb(244, 67, 54);
 }
 
@@ -3490,6 +3490,9 @@ img {
     margin-top: 10px;
     padding: 5px 10px;
     border-left: 2px solid rgb(244, 67, 54);
+  }
+  .header-socials {
+    top: 30%;
   }
   .header-socials__container {
     margin-left: 30px;
@@ -3771,8 +3774,8 @@ img {
   }
   .projects-slider {
     margin-top: 50px;
-    margin-left: -45px;
-    margin-right: -45px;
+    margin-left: -40px;
+    margin-right: -40px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;

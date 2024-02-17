@@ -1080,7 +1080,7 @@ img
         position: relative
         z-index: 200
         @include alignCenter()
-    &__container:hover>img
+    &__container:hover >img
         filter: blur(1px)
         transition: 0.3s ease
     &__container:hover .projects-slider__loop
@@ -1128,11 +1128,11 @@ img
     margin: 5px
     &__text
         display: none
-        font-family: RobotoRegular
+        font-family: RobotoMedium
         color: $elemColor
     &__label
         width: 45px
-        height: 1px
+        height: 2px
         background: $textColor
 // projects---------------------------------------------------------------
 // reviews----------------------------------------------------------------
@@ -1174,7 +1174,7 @@ img
             color: $textColor
     &__indicators
         @include alignCenter()
-        align-items: start
+        align-items: flex-start
         margin-top: 40px
     &__indicator
         width: 6px
@@ -1690,7 +1690,7 @@ img
     opacity: 1
     transition: 1s
 .activeProjectLabel
-        height: 2px
+        height: 3px
         background: $elemColor 
 .activeProjectNumber
         display: block 
@@ -1800,6 +1800,7 @@ img
             padding: 5px 10px
             border-left: 2px solid $elemColor
     .header-socials
+        top: 30%
         &__container
             margin-left: 30px
         &__list
@@ -1949,8 +1950,8 @@ img
             margin: 5px 0px
     .projects-slider
         margin-top: 50px
-        margin-left: -45px
-        margin-right: -45px
+        margin-left: -40px
+        margin-right: -40px
         flex: 0 1 100%
         box-sizing: border-box
         &__container
