@@ -10,11 +10,11 @@
     $mail->setLanguage('ru', 'phpmailer/language');
     $mail->isHTML(true);
 
-    $mail->setFrom('bs-cv.website','WeBStudio');
+    $mail->setFrom('webdevstudio.click','WeBStudio');
     $mail->addAddress('0997198431@ukr.net');
     $mail->Subject = 'Лист з WeBStudio!';
 
-    $body = '<h1>Повідомлення з сайту!</h1>';
+    $body = '<h1>Повідомлення з WeBStudio!</h1>';
 
     if(trim(!empty($_POST['name']))) {
         $body.='<p>Name: '.$_POST['name'].'</p>';

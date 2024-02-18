@@ -25,6 +25,39 @@ img
     margin: 0px auto
 .inner
     margin: 0px 150px
+.start-page
+    position: fixed
+    z-index: 2000
+    top: 0px
+    left: 0px
+    width: 100vw
+    height: 100vh
+    @include alignCenter()
+    background: $bgColor
+    &__btn img
+        position: relative
+        z-index: 200
+        transform: rotate(-45deg)
+    &__btn
+        position: relative
+        @include alignCenter()
+        width: 150px
+        transform: rotate(45deg)
+    &__btn::after
+        content: ''
+        position: absolute
+        background: radial-gradient($shadow, transparent 140%)
+        animation: scaleAnimation 1.4s infinite
+    &__btn:hover
+        animation: none
+        cursor: pointer
+@keyframes scaleAnimation 
+    0% 
+        width: 65%
+        height: 65%
+    100% 
+        width: 85%
+        height: 85%
 .back-lines
     position: absolute
     left: 0px
@@ -337,6 +370,7 @@ img
     overflow: auto
     &__container
         @include alignCenter()
+        margin: 100px 0px
     &__item
         margin: 20px
 .overlay-menu
@@ -388,7 +422,7 @@ img
         transition: 0.3s
 .overlay.overlayOpen 
     visibility: visible
-    height: 100%
+    height: auto
 .overlay.overlayOpen li
     -webkit-animation: fadeInFromBottom 0.6s ease forwards
             animation: fadeInFromBottom 0.6s ease forwards
@@ -766,6 +800,11 @@ img
         height: 6px
         border: 1px solid rgb(255, 255, 255)
 .skills-cards
+    @include alignColumn()
+    align-items: start
+    box-sizing: border-box
+    width: 100%
+.skills-educations
     @include alignColumn()
     align-items: start
     box-sizing: border-box
@@ -1591,6 +1630,7 @@ img
     background: $bgColor
     &__socials-list
         @include alignColumn()
+        align-items: end
         list-style: none
         padding: 0px
         width: 70px
@@ -1756,14 +1796,14 @@ img
         font-size: 20px
     .navbar
         &__logo
-            &_icon
-                width: 50px
             &_title
-                font-size: 18px
+                font-size: 20px
             &_title span:nth-child(1)
-                font-size: 18px
+                font-size: 20px
             &_title span:nth-child(2)
-                font-size: 18px
+                font-size: 20px
+            &_text
+                font-size: 10px
 
 @media ( max-width: 1250px ) 
     *
@@ -1796,18 +1836,43 @@ img
     .projects-slider__container,
     .price-card__content
         padding: 10px
+    .about,
+    .services,
+    .projects,
+    .pricing,
+    .contacts
+        margin-top: 100px
     .navbar
         &__logo
+            &_icon
+                width: 50px
             &_title
-                font-size: 16px
+                font-size: 18px
             &_title span:nth-child(1)
-                font-size: 16px
+                font-size: 18px
             &_title span:nth-child(2)
-                font-size: 16px
+                font-size: 18px
             &_text
-                font-size: 10px
-    .header-socials__container
-        margin-left: 100px
+                font-size: 9px
+    .navbar .inner
+        height: 80px
+    .select-lang
+        &__option 
+            font-size: 18px
+        &__link
+            font-size: 18px
+    .header-socials
+        &__container
+            margin-left: 100px
+        &__icon
+            width: 24px
+            height: 24px
+    .skills__container
+        margin-top: 120px
+    .skills-list__item::before,
+    .service-card__item::before,
+    .pricing__content_item::before
+        top: 8px
     .contacts-form
         padding: 0px
         &__container
@@ -1840,11 +1905,21 @@ img
             margin-top: 50px
             flex-direction: column
         &__item
-            margin: 50px 30px
-    .education__line
-        height: 70px
-    .services__container
-        margin: 100px -5px 0px -5px
+            margin: 50px 20px
+    .skill-card
+        width: 100%
+    .skills-educations
+        justify-content: space-between
+        flex-direction: row
+        flex-wrap: wrap
+    .education
+        justify-content: center
+        width: auto
+        margin: 10px 20px 10px 0px
+        &__line
+            height: 70px
+        &__container
+            margin: 100px -5px 0px -5px
     .service-card__content
         margin: 5px
     .service-thumb__content
@@ -1879,8 +1954,6 @@ img
     .price-thumb
         width: 100%
         justify-content: center
-    // .price-thumb__content
-    //     width: 50%
 
 @media ( max-width: 1000px ) 
     .menubar__item
@@ -1922,6 +1995,19 @@ img
             padding: 0px
             width: 40px
 
+@media ( max-width: 900px ) 
+    .burger
+        display: block
+    .overlay-menu
+        &__link
+            font-size: 20px
+    .menubar
+        &__item
+            display: none
+        &__burger
+            margin-left: 15px 
+    .navbar .inner
+        height: 80px
 
 @media ( max-width: 800px ) 
     *
@@ -1961,35 +2047,11 @@ img
             width: 100%
     .inner
         margin: 0px 70px
-    .burger
-        display: block
-    .overlay-menu
-        &__link
-            font-size: 20px
-    .menubar
-        &__item
-            display: none
-        &__burger
-            margin-left: 15px 
-    .navbar
-        &__logo
-            &_icon
-                width: 50px
-            &_title
-                font-size: 20px
-            &_title span:nth-child(1)
-                font-size: 20px
-            &_title span:nth-child(2)
-                font-size: 20px
-            &_text
-                font-size: 12px
-    .navbar .inner
-        height: 80px
     .select-lang
         &__option 
-            font-size: 20px
+            font-size: 18px
         &__link
-            font-size: 20px
+            font-size: 18px
         &__thumb
             @include alignCenter()
             width: 14px
@@ -2306,11 +2368,15 @@ img
         background: url('../img/background-header-small.svg') no-repeat center center
         background-size: cover
     .header-socials
-        bottom: 20px
+        bottom: 10%
         transform: translateX(0%)
         &__container
             transform: rotate(0deg)
-            margin-left: 30px
+            margin-left: 40px
+        &__text
+            display: none
+        &__line
+            display: none
     .about-caption,
     .services-caption,
     .projects-caption,

@@ -24,6 +24,19 @@ window.addEventListener("scroll", function() {
 });
 // ------------------------------
 
+
+// обробник зміни вистоти header
+document.addEventListener('DOMContentLoaded', function () {
+  
+  const startPage = document.querySelector('.start-page');
+  const startBtn = document.querySelector('.start-page__btn');
+
+  startBtn.addEventListener('click', function () {
+    startPage.style.display = 'none';
+  });
+});
+// ------------------------------
+
 // обробник показника курсора миші
 document.addEventListener('DOMContentLoaded', function () {
   const rectangle = document.getElementById('rectangle');
@@ -46,6 +59,26 @@ document.addEventListener('DOMContentLoaded', function () {
       rectangle.style.display = 'none';
   });
 });
+// ------------------------------
+
+// обробник зміни вистоти header
+function setHeaderHeight() {
+  
+  const header = document.querySelector('.header');
+  let viewportHeight = window.innerHeight;
+  let viewportWidth = window.innerWidth;
+  let headerHeight = Math.max(viewportHeight, viewportWidth);
+
+  if(viewportWidth < 800 && (viewportWidth < 800 || viewportHeight < 800)) {
+    header.style.height = headerHeight + 'px';
+  } 
+    else {
+      header.style.height = '';
+    }
+}
+
+window.addEventListener('load', setHeaderHeight);
+window.addEventListener('orientationchange', setHeaderHeight);
 // ------------------------------
 
 // обробник додавання класу active копкам menubar
